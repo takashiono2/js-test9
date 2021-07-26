@@ -1,15 +1,23 @@
 'use strict';
 
-// #5
+// #6
 {
-  const scores = [80, 90, 40, 70];
-  scores.splice(1,1,40,50);
-  //80,40,50,40,70
-
-  for(var i=0; i < scores.length ;i++){
-    console.log(`スコア ${i}:${scores[i]}`);
-    }
+  const otherScores = [10,20];
+  const scores = [80, 90, 40, 70, ...otherScores];
+  console.log(scores);
+  sum(...otherScores);
 }
+
+// #5
+// {
+//   const scores = [80, 90, 40, 70];
+//   scores.splice(1,1,40,50);
+//   //80,40,50,40,70
+
+//   for(var i=0; i < scores.length ;i++){
+//     console.log(`スコア ${i}:${scores[i]}`);
+//     }
+// }
 
 
 // {
