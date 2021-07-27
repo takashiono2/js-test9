@@ -1,14 +1,29 @@
 'use strict';
-// #9
+// #10
 {
-  const scores = [180, 190, 200];
-  // const updatePreices = scores.map((score)=>{
-  //   return score+20;
+  const numbers = [1,4,7,8,10];
+  // const evenNumbers = numbers.filter((number)=>{
+  //   if(number % 2 === 0){
+  //     return true;
+  //   }else{
+  //     return false;
+  //   }
   // });
 
-  const updatePreices = scores.map(score => score+20);
-  console.log(updatePreices);
+  const evenNumbers = numbers.filter(number => (number % 2 === 0));
+  console.log(evenNumbers);
 }
+
+// #9
+// {
+//   const scores = [180, 190, 200];
+//   // const updatePreices = scores.map((score)=>{
+//   //   return score+20;
+//   // });
+
+//   const updatePreices = scores.map(score => score+20);
+//   console.log(updatePreices);
+// }
 
 // #8
 // {
