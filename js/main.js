@@ -1,7 +1,14 @@
 'use strict';
+// #8
+{
+  const scores = [80, 90, 40, 70]
+  scores.forEach((score,index)=>{
+    console.log(`スコア ${index}:${score}`)
+  });
+}
 
 // #7
-{
+// {
   // const scores = [80, 90, 40, 70]
   // const[a,b,c,d] = [80, 90, 40, 70]
   // console.log(a);
@@ -14,12 +21,12 @@
   // console.log(b);
   // console.log(others);
 
-  let x = 30;
-  let y = 70;
-  [x,y] = [y,x];
-  console.log(x);
-  console.log(y);
-}
+//   let x = 30;
+//   let y = 70;
+//   [x,y] = [y,x];
+//   console.log(x);
+//   console.log(y);
+// }
 
 // #6
 // {
