@@ -1,20 +1,42 @@
 'use strict';
-// #13
+// #14
 {
-  const otherProps = {
-    r: 4,
-    color: 'red'
-  };
-  const point = {
-    x: 100,
-    y: 180,
-    ...otherProps
-  };
-  const {x,y,...others} = point;
-  console.log(x);
-  console.log(y);
-  console.log(others);
+  // const point = {
+  //   x: 100,
+  //   y: 180
+  // }
+
+  // const keys = Object.keys(point);
+  // keys.forEach((key)=>{
+  //   console.log(`key:${key} value:${point[key]}`);
+  // });
+
+  const points =[
+    {x:20, y:30},
+    {x:30, y:40},
+    {x:40, y:50}
+  ];
+
+  console.log(points[1].y);
+
 }
+
+// #13
+// {
+//   const otherProps = {
+//     r: 4,
+//     color: 'red'
+//   };
+//   const point = {
+//     x: 100,
+//     y: 180,
+//     ...otherProps
+//   };
+//   const {x,y,...others} = point;
+//   console.log(x);
+//   console.log(y);
+//   console.log(others);
+// }
 
 // #11#12
 // {
