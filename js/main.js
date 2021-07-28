@@ -1,16 +1,33 @@
 'use strict';
-// #11
+// #13
 {
-  const point={
-    x:100,
-    y:180
+  const otherProps = {
+    r: 4,
+    color: 'red'
   };
-
-  point.x = 120;
-  point.z = 100;
-  delete point.y;
-  console.log(point);
+  const point = {
+    x: 100,
+    y: 180,
+    ...otherProps
+  };
+  const {x,y,...others} = point;
+  console.log(x);
+  console.log(y);
+  console.log(others);
 }
+
+// #11#12
+// {
+//   const point={
+//     x:100,
+//     y:180
+//   };
+
+//   point.x = 120;
+//   point.z = 100;
+//   delete point.y;
+//   console.log(point);
+// }
 
 // #10
 // {
