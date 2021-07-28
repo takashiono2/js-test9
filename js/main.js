@@ -1,18 +1,31 @@
 'use strict';
-// #10
+// #11
 {
-  const numbers = [1,4,7,8,10];
-  // const evenNumbers = numbers.filter((number)=>{
-  //   if(number % 2 === 0){
-  //     return true;
-  //   }else{
-  //     return false;
-  //   }
-  // });
+  const point={
+    x:100,
+    y:180
+  };
 
-  const evenNumbers = numbers.filter(number => (number % 2 === 0));
-  console.log(evenNumbers);
+  point.x = 120;
+  point.z = 100;
+  delete point.y;
+  console.log(point);
 }
+
+// #10
+// {
+//   const numbers = [1,4,7,8,10];
+//   // const evenNumbers = numbers.filter((number)=>{
+//   //   if(number % 2 === 0){
+//   //     return true;
+//   //   }else{
+//   //     return false;
+//   //   }
+//   // });
+
+//   const evenNumbers = numbers.filter(number => (number % 2 === 0));
+//   console.log(evenNumbers);
+// }
 
 // #9
 // {
