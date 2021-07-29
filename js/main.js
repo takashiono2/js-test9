@@ -1,18 +1,26 @@
 'use strict';
-// #15#16
+// #17
  {
-  //  let x = [1,2];
-  //  let y = x;
-  //  x[0]=5;
-  //  console.log(x);//[5,2]
-  //  console.log(y);//[5,2]
-
-   let x = [1,2];
-   let y = [...x];
-   x[0]=5;
-   console.log(x);//[5,2]
-   console.log(y);//[1,2]
+   const str = 'hello';
+   console.log(str.length);
+   console.log(str.substring(2,4));
+   console.log(str[1]);
  }
+
+// #15#16
+//  {
+//   //  let x = [1,2];
+//   //  let y = x;
+//   //  x[0]=5;
+//   //  console.log(x);//[5,2]
+//   //  console.log(y);//[5,2]
+
+//    let x = [1,2];
+//    let y = [...x];
+//    x[0]=5;
+//    console.log(x);//[5,2]
+//    console.log(y);//[1,2]
+//  }
 
 // #14
 // {
