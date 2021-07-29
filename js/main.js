@@ -1,6 +1,21 @@
 'use strict';
+// #15#16
+ {
+  //  let x = [1,2];
+  //  let y = x;
+  //  x[0]=5;
+  //  console.log(x);//[5,2]
+  //  console.log(y);//[5,2]
+
+   let x = [1,2];
+   let y = [...x];
+   x[0]=5;
+   console.log(x);//[5,2]
+   console.log(y);//[1,2]
+ }
+
 // #14
-{
+// {
   // const point = {
   //   x: 100,
   //   y: 180
@@ -11,15 +26,15 @@
   //   console.log(`key:${key} value:${point[key]}`);
   // });
 
-  const points =[
-    {x:20, y:30},
-    {x:30, y:40},
-    {x:40, y:50}
-  ];
+  // const points =[
+  //   {x:20, y:30},
+  //   {x:30, y:40},
+  //   {x:40, y:50}
+  // ];
 
-  console.log(points[1].y);
+  // console.log(points[1].y);
 
-}
+// }
 
 // #13
 // {
