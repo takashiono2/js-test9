@@ -1,17 +1,39 @@
 'use strict';
-// #18
+// #19
  {
-  const d = [2021,7,31];
-  console.log(d.join('/'));
+   const scores = [10,3,9];
+   let sum = 0;
+   
+   scores.forEach((score)=>{
+      sum += score; 
+   });
+   
+  //  console.log(sum);
 
-  const t ='17:08:24';
-  console.log(t.split(':'));
+   const avg = sum / scores.length;
+   console.log(avg);//7.3333333333
 
-  const[hour,minute,second] = [t.split(':')]
-  console.log(hour);
-  console.log(minute);
-  console.log(second);
+   console.log(Math.floor(avg));//7
+   console.log(Math.ceil(avg));//8
+   console.log(Math.round(avg));//四捨五入7
+   console.log(avg.toFixed(3));//小数点を指定して丸める7.333
+
+   console.log(Math.random());//0以上1未満のランダムな数字
  }
+
+// #18
+//  {
+//   const d = [2021,7,31];
+//   console.log(d.join('/'));
+
+//   const t ='17:08:24';
+//   console.log(t.split(':'));
+
+//   const[hour,minute,second] = [t.split(':')]
+//   console.log(hour);
+//   console.log(minute);
+//   console.log(second);
+//  }
 
 // #17
 //  {
