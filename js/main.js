@@ -1,25 +1,37 @@
 'use strict';
-// #19
+// #20
  {
-   const scores = [10,3,9];
-   let sum = 0;
-   
-   scores.forEach((score)=>{
-      sum += score; 
-   });
-   
-  //  console.log(sum);
+  //0,1,2 
+  // Math.floor(Math.random()*3)
+  // //0,..,n
+  // Math.floor(Math.random()*(n+1))
+  // //min,..,max
+  // Math.floor(Math.random()*(max+1-min)) + min
 
-   const avg = sum / scores.length;
-   console.log(avg);//7.3333333333
-
-   console.log(Math.floor(avg));//7
-   console.log(Math.ceil(avg));//8
-   console.log(Math.round(avg));//四捨五入7
-   console.log(avg.toFixed(3));//小数点を指定して丸める7.333
-
-   console.log(Math.random());//0以上1未満のランダムな数字
+  console.log(Math.floor(Math.random()*6)+1);
  }
+
+// #19
+//  {
+//    const scores = [10,3,9];
+//    let sum = 0;
+   
+//    scores.forEach((score)=>{
+//       sum += score; 
+//    });
+   
+//   //  console.log(sum);
+
+//    const avg = sum / scores.length;
+//    console.log(avg);//7.3333333333
+
+//    console.log(Math.floor(avg));//7
+//    console.log(Math.ceil(avg));//8
+//    console.log(Math.round(avg));//四捨五入7
+//    console.log(avg.toFixed(3));//小数点を指定して丸める7.333
+
+//    console.log(Math.random());//0以上1未満のランダムな数字
+//  }
 
 // #18
 //  {
