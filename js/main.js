@@ -1,12 +1,23 @@
 'use strict';
-// #22
+// #23
   {
-    const d = new Date(2021,6);
-    d.setHours(10,20,30);//2021年7月 10:20:30
-    d.setDate(20);//2021年7月20日 10:20:30
-    d.setDate(d.getDate()+3);//2021年7月23日 10:20:30
-    console.log(d);
+    // alert('キャンセルしました');
+    const answer = confirm('削除しますか？');
+      if(answer){
+        console.log('削除しました');
+      }else{
+        console.log('キャンセルしました');
+      }
   }
+
+// #22
+  // {
+    // const d = new Date(2021,6);
+    // d.setHours(10,20,30);//2021年7月 10:20:30
+    // d.setDate(20);//2021年7月20日 10:20:30
+    // d.setDate(d.getDate()+3);//2021年7月23日 10:20:30
+    // console.log(d);
+  // }
 
 // #21
   // {
