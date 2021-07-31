@@ -1,6 +1,23 @@
 'use strict';
+// #22
+  {
+    const d = new Date(2021,6);
+    d.setHours(10,20,30);//2021年7月 10:20:30
+    d.setDate(20);//2021年7月20日 10:20:30
+    d.setDate(d.getDate()+3);//2021年7月23日 10:20:30
+    console.log(d);
+  }
+
+// #21
+  // {
+  //   const d = new Date();
+  //   // console.log(d);
+  //   console.log(`${d.getMonth()+1}月 ${d.getDate()}日`);
+    
+  // }
+
 // #20
- {
+//  {
   //0,1,2 
   // Math.floor(Math.random()*3)
   // //0,..,n
@@ -8,8 +25,8 @@
   // //min,..,max
   // Math.floor(Math.random()*(max+1-min)) + min
 
-  console.log(Math.floor(Math.random()*6)+1);
- }
+  // console.log(Math.floor(Math.random()*6)+1);
+//  }
 
 // #19
 //  {
