@@ -1,17 +1,31 @@
 'use strict';
-// #24
+// #25
   {
     let i = 0;
     function showTime(){
       console.log(new Date());
+      const intervalId = setTimeout(showTime,1000);
       i++;
       if(i>2){
-        clearInterval(intervalId);
-      }
+        clearTimeout(intervalId);
+            }
     }
-
-    const intervalId = setInterval(showTime, 1000);
+    showTime();
   }
+
+// #24
+  // {
+  //   let i = 0;
+  //   function showTime(){
+  //     console.log(new Date());
+  //     i++;
+  //     if(i>2){
+  //       clearInterval(intervalId);
+  //     }
+  //   }
+
+  //   const intervalId = setInterval(showTime, 1000);
+  // }
 
 // #23
   // {
