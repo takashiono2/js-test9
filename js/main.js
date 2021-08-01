@@ -1,17 +1,47 @@
 'use strict';
-// #28
+// #29
   {
     const posts = [
-      {text:'JS',likeCount:0},
-      {text:'プログラミング',likeCount:0}
-    ];
-
-    function show(post){
-      console.log(`${post.text}-いいね${post.likeCount}`);
-    }
-    
-    show(posts[0]);
+      {
+        text:'JS',
+        likeCount:0,
+        // show:function(){
+        //   console.log(`${this.text}-いいね${this.likeCount}`);
+        // }
+        show(){
+          console.log(`${this.text}-いいね${this.likeCount}`);
+        }
+      },
+      {
+        text:'プログラミング',
+        likeCount:0,
+        show(){
+          console.log(`${this.text}-いいね${this.likeCount}`);
+        }
+      },
+    ];  
+    // show(posts[0]);
+    posts[0].show();
+    posts[1].show();
   }
+
+// #28
+  // {
+  //   const posts = [
+  //     {
+  //       text:'JS',likeCount:0
+  //     },
+  //     {
+  //       text:'プログラミング',likeCount:0
+  //     }
+  //   ];
+
+  //   function show(post){
+  //     console.log(`${post.text}-いいね${post.likeCount}`);
+  //   }
+    
+  //   show(posts[0]);
+  // }
 
 // #27
   // {
