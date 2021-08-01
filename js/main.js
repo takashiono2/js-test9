@@ -1,15 +1,29 @@
 'use strict';
-// #27
+// #28
   {
-      // const name = 'taguchi';
-      const name = 5;
-      
-      try{
-        console.log(name.toUpperCase());
-      }catch(e){
-        console.log('finish!');
-      }
+    const posts = [
+      {text:'JS',likeCount:0},
+      {text:'プログラミング',likeCount:0}
+    ];
+
+    function show(post){
+      console.log(`${post.text}-いいね${post.likeCount}`);
+    }
+    
+    show(posts[0]);
   }
+
+// #27
+  // {
+  //     // const name = 'taguchi';
+  //     const name = 5;
+      
+  //     try{
+  //       console.log(name.toUpperCase());
+  //     }catch(e){
+  //       console.log('finish!');
+  //     }
+  // }
 
 // #25#26
   // {
