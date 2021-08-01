@@ -1,17 +1,29 @@
 'use strict';
-// #25
+// #27
   {
-    let i = 0;
-    function showTime(){
-      console.log(new Date());
-      const intervalId = setTimeout(showTime,1000);
-      i++;
-      if(i>2){
-        clearTimeout(intervalId);
-            }
-    }
-    showTime();
+      // const name = 'taguchi';
+      const name = 5;
+      
+      try{
+        console.log(name.toUpperCase());
+      }catch(e){
+        console.log('finish!');
+      }
   }
+
+// #25#26
+  // {
+  //   let i = 0;
+  //   function showTime(){
+  //     console.log(new Date());
+  //     const intervalId = setTimeout(showTime,1000);
+  //     i++;
+  //     if(i>2){
+  //       clearTimeout(intervalId);
+  //           }
+  //   }
+  //   showTime();
+  // }
 
 // #24
   // {
