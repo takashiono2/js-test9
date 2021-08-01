@@ -1,29 +1,52 @@
 'use strict';
-// #29
+// #30,31
   {
+    class Post{
+      constructor(text){
+        this.text = text;
+        this.likeCount = 0;
+      }
+
+      show(){
+        console.log(`${this.text}-いいね${this.likeCount}`);
+      }
+    }
+    
     const posts = [
-      {
-        text:'JS',
-        likeCount:0,
-        // show:function(){
-        //   console.log(`${this.text}-いいね${this.likeCount}`);
-        // }
-        show(){
-          console.log(`${this.text}-いいね${this.likeCount}`);
-        }
-      },
-      {
-        text:'プログラミング',
-        likeCount:0,
-        show(){
-          console.log(`${this.text}-いいね${this.likeCount}`);
-        }
-      },
+      new Post('JS'),
+      new Post('プログラミング')    
     ];  
+
     // show(posts[0]);
     posts[0].show();
     posts[1].show();
   }
+
+// #29
+  // {
+  //   const posts = [
+  //     {
+  //       text:'JS',
+  //       likeCount:0,
+  //       // show:function(){
+  //       //   console.log(`${this.text}-いいね${this.likeCount}`);
+  //       // }
+  //       show(){
+  //         console.log(`${this.text}-いいね${this.likeCount}`);
+  //       }
+  //     },
+  //     {
+  //       text:'プログラミング',
+  //       likeCount:0,
+  //       show(){
+  //         console.log(`${this.text}-いいね${this.likeCount}`);
+  //       }
+  //     },
+  //   ];  
+  //   // show(posts[0]);
+  //   posts[0].show();
+  //   posts[1].show();
+  // }
 
 // #28
   // {
