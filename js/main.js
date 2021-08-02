@@ -1,5 +1,5 @@
 'use strict';
-// #30,31
+// #33
   {
     class Post{
       constructor(text){
@@ -8,19 +8,85 @@
       }
 
       show(){
-        console.log(`${this.text}-いいね${this.likeCount}`);
+        console.log(`${this.text}-${this.likeCount} likes`);
+      }
+    
+      like(){
+        this.likeCount++;
+        this.show();
+      }
+      //静的メソッドstaticで直接よべる,thisは使えない
+      //クラス内でのthisはこのクラスから作られるインスタンス
+      //静的メソッドはインスタンスを作らずに呼ぶので、thisは使えない
+      static showInfo(){
+        console.log('Post Class Version 1.0');
       }
     }
-    
+
+  
+
+
     const posts = [
       new Post('JS'),
       new Post('プログラミング')    
     ];  
 
     // show(posts[0]);
-    posts[0].show();
-    posts[1].show();
+    // posts[0].like();
+    Post.showInfo();
   }
+
+// #32
+  // {
+  //   class Post{
+  //     constructor(text){
+  //       this.text = text;
+  //       this.likeCount = 0;
+  //     }
+
+  //     show(){
+  //       console.log(`${this.text}-${this.likeCount} likes`);
+  //     }
+    
+  //     like(){
+  //       this.likeCount++;
+  //       this.show();
+  //     }
+  //   }
+
+  //   const posts = [
+  //     new Post('JS'),
+  //     new Post('プログラミング')    
+  //   ];  
+
+  //   // show(posts[0]);
+  //   posts[0].like();
+  //   // posts[0].show();
+  //   // posts[1].show();
+  // }
+  
+// #30,31
+  // {
+  //   class Post{
+  //     constructor(text){
+  //       this.text = text;
+  //       this.likeCount = 0;
+  //     }
+
+  //     show(){
+  //       console.log(`${this.text}-いいね${this.likeCount}`);
+  //     }
+  //   }
+    
+  //   const posts = [
+  //     new Post('JS'),
+  //     new Post('プログラミング')    
+  //   ];  
+
+  //   // show(posts[0]);
+  //   posts[0].show();
+  //   posts[1].show();
+  // }
 
 // #29
   // {
