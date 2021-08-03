@@ -1,7 +1,7 @@
 'use strict';
-// #33
+// // #34
   {
-    class Post{
+      class Post{
       constructor(text){
         this.text = text;
         this.likeCount = 0;
@@ -22,19 +22,76 @@
         console.log('Post Class Version 1.0');
       }
     }
+      class SponsoredPost{
+      constructor(text,sponsor){
+        this.text = text;
+        this.likeCount = 0;
+        this.sponser = sponsor;
+      }
 
-  
-
+      show(){
+        console.log(`${this.text}-${this.likeCount} likes`);
+        console.log(`...sponsored by ${this.sponsor}`);
+      }
+    
+      like(){
+        this.likeCount++;
+        this.show();
+      }
+      //静的メソッドstaticで直接よべる,thisは使えない
+      //クラス内でのthisはこのクラスから作られるインスタンス
+      //静的メソッドはインスタンスを作らずに呼ぶので、thisは使えない
+      static showInfo(){
+        console.log('Post Class Version 1.0');
+      }
+    }
 
     const posts = [
       new Post('JS'),
-      new Post('プログラミング')    
+      new Post('プログラミング'),
+      new SponsoredPost('３分動画でマスター','dotinstall')
     ];  
 
     // show(posts[0]);
     // posts[0].like();
-    Post.showInfo();
+    // Post.showInfo();
+    posts[2].show();
+    posts[2].like();
+
   }
+
+// // #33
+//   {
+//     class Post{
+//       constructor(text){
+//         this.text = text;
+//         this.likeCount = 0;
+//       }
+
+//       show(){
+//         console.log(`${this.text}-${this.likeCount} likes`);
+//       }
+    
+//       like(){
+//         this.likeCount++;
+//         this.show();
+//       }
+//       //静的メソッドstaticで直接よべる,thisは使えない
+//       //クラス内でのthisはこのクラスから作られるインスタンス
+//       //静的メソッドはインスタンスを作らずに呼ぶので、thisは使えない
+//       static showInfo(){
+//         console.log('Post Class Version 1.0');
+//       }
+//     }
+//     const posts = [
+//       new Post('JS'),
+//       new Post('プログラミング')    
+//     ];  
+
+//     // show(posts[0]);
+//     // posts[0].like();
+//     Post.showInfo();
+//   }
 
 // #32
   // {
